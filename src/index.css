@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #66dd8b;
+  --color-on-primary-container: #04974d;
+  --color-sidebar: #0f172a;
+  --color-dashboard: #020617;
+  --color-card: #1e293b;
+}
+
+body {
+  @apply bg-dashboard text-white font-sans;
+}
+
+button {
+  cursor: pointer;
+}
+
+.recharts-responsive-container,
+.recharts-wrapper,
+.recharts-surface,
+.recharts-layer,
+.recharts-cartesian-axis-tick,
+.recharts-active-dot {
+  outline: none !important;
+}
+.recharts-wrapper *:focus {
+  outline: none !important;
+}
+
+/* Remove number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Customize or hide scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Day Mode Theme Patch */
+html.light body {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+html.light .bg-dashboard { background-color: #f8fafc !important; }
+html.light .bg-sidebar { background-color: #ffffff !important; border-right: 1px solid #e2e8f0 !important; }
+html.light .bg-card { background-color: #ffffff !important; border: 1px solid #e2e8f0; }
+
+/* Dashboard Headers & Bars */
+html.light .bg-\[\#0b1120\] { background-color: #ffffff !important; border-bottom-color: #e2e8f0 !important; }
+html.light .bg-\[\#0b1120\]\/50 { background-color: #ffffff !important; border-bottom-color: #e2e8f0 !important; }
+
+/* Common Adjustments */
+html.light .text-white { color: #111827 !important; }
+html.light .text-gray-400 { color: #6b7280 !important; }
+html.light .text-gray-300 { color: #4b5563 !important; }
+html.light .text-gray-500 { color: #9ca3af !important; }
+
+/* Add Bet / Formulários */
+html.light .bg-white\/\[0\.01\],
+html.light .bg-white\/\[0\.02\],
+html.light .bg-white\/\[0\.03\],
+html.light .bg-white\/5 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light [class*="text-white/"],
+html.light .text-white {
+  color: #374151 !important;
+}
+
+html.light [class*="text-yellow-400"],
+html.light [class*="text-yellow-500"] {
+  color: #b45309 !important; /* Tailwind yellow-700 / amber-700 equivalent */
+}
+
+html.light [class*="border-yellow-500/"] {
+  border-color: #fbbf24 !important; /* Tailwind yellow-400 */
+}
+
+html.light [class*="bg-yellow-500/"] {
+  background-color: #fef3c7 !important; /* Tailwind yellow-100 */
+}
+
+html.light .placeholder\:text-gray-600::placeholder {
+  color: #9ca3af !important;
+}
+
+/* Remover color scheme dark dos inputs */
+html.light [class*="text-indigo-400"] {
+  color: #4f46e5 !important;
+}
+
+html.light [class*="bg-indigo-500/"] {
+  background-color: #e0e7ff !important;
+}
+
+html.light [class*="border-indigo-500/"] {
+  border-color: #c7d2fe !important;
+}
+
+html.light input[type="date"],
+html.light input[type="time"] {
+  color-scheme: light !important;
+}
+
+/* Dropdown options background */
+html.light option.bg-\[\#0b1120\] {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Modals & other specific dark backgrounds */
+html.light .bg-\[\#0f172a\] { background-color: #ffffff !important; border-color: #e2e8f0 !important; }
+
+/* Let Sidebar texts breathe */
+html.light aside.bg-sidebar .text-gray-300,
+html.light aside.bg-sidebar .text-gray-400 { 
+  color: #4b5563 !important; 
+}
+html.light aside.bg-sidebar .hover\:text-white:hover {
+  color: #111827 !important;
+}
+html.light aside.bg-sidebar .bg-\[\#0a101f\] {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+html.light aside.bg-sidebar .bg-card\/80 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-900\/60 {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #6b7280 !important;
+}
+
+/* Fix generic tailwind backgrounds & borders */
+html.light .bg-white\/5,
+html.light .bg-white\/\[0\.02\],
+html.light .bg-\[\#1e293b\] {
+  background-color: #ffffff !important; 
+}
+html.light .bg-white\/10 {
+  background-color: #f1f5f9 !important;
+}
+html.light .border-white\/5,
+html.light .border-white\/10 {
+  border-color: #e2e8f0 !important;
+}
+html.light .hover\:bg-white\/5:hover,
+html.light .hover\:bg-white\/\[0\.05\]:hover {
+  background-color: #f1f5f9 !important;
+}
+html.light .hover\:text-white:hover {
+  color: #111827 !important;
+}
+
+/* Exception for the Add bet button & Gradient Actions */
+html.light .from-\[\#5a5de3\] {
+  color: #ffffff !important; 
+}
+html.light button.bg-gradient-to-r .text-white {
+  color: #ffffff !important;
+}
+html.light .bg-primary .text-white {
+  color: #ffffff !important;
+}
+
+/* Exception for specific Primary text */
+html.light .text-primary {
+  color: #04974d !important; 
+}
+
+/* Charts & Special Tables */
+html.light .recharts-cartesian-grid-horizontal line,
+html.light .recharts-cartesian-grid-vertical line {
+  stroke: #e2e8f0 !important;
+}
+html.light .recharts-cartesian-axis-tick-value {
+  fill: #6b7280 !important;
+}
+html.light .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #1f2937 !important;
+}
+html.light .recharts-tooltip-item {
+  color: #1f2937 !important;
+}
+

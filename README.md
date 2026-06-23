@@ -1,11 +1,19 @@
-<div align="center">
+# Bet Tracker Dashboard
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Gerencie suas apostas esportivas, acompanhe seu lucro e visualize estatísticas detalhadas de forma simples e intuitiva.
 
-  <h1>Built with AI Studio</h2>
+## Funcionalidades principais
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Dashboard de Estatísticas:** Acompanhe lucro líquido, taxa de acerto, ROI e apostas pendentes.
+- **Gráfico de Evolução:** Visualize seu progresso financeiro ao longo do tempo.
+- **Gestão de Apostas:** Adicione, edite e remova apostas facilmente.
+- **Configurações de Exibição:** Personalize quais dados você deseja visualizar em cada aposta.
+- **Status das Apostas:** Altere o status das apostas (Ganha, Perdida, Pendente, Cashout, etc.) com um clique.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Como rodar localmente
 
-</div>
+1. Clone o repositório.
+2. Instale as dependências: `npm install`
+3. Rode o servidor de desenvolvimento: `npm run dev`
+
+Este projeto foi desenvolvido utilizando React, TypeScript, Tailwind CSS e Vite.

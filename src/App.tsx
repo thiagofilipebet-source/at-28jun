@@ -19,7 +19,6 @@ import { Auth } from './components/Auth';
 import { SharedBankrollView } from './components/SharedBankrollView';
 import { AdminView } from './components/AdminView';
 import { UpdateBanner } from './components/UpdateBanner';
-import { DiscontinuationBanner } from './components/DiscontinuationBanner';
 import { supabase } from './lib/supabase';
 import { Session } from '@supabase/supabase-js';
 import { LoadingScreen } from './components/LoadingScreen';
@@ -217,7 +216,6 @@ function AppContent() {
 
   return (
     <>
-      <DiscontinuationBanner />
       <UpdateBanner />
       <AnimatePresence mode="wait">
         {isActuallyLoading && <LoadingScreen key="loader" />}
